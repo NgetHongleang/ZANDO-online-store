@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    & .navbar-brand{
+        & img {
+            width: 130px;
+        }
+    }
+    & .navbar-collapse{
+        margin-left: 100px;
+    }
+    & .navbar-nav {
+        display: flex;
+        gap: 50px;
+        font-size: 19px;
+
+        & .nav-item{
+            & .nav-link{
+                font-weight: bold;
+            }
+        }
+    }
+}
+section .slide{
+    .carousel-inner{
+        height: 600px;
+        & .carousel-item{
+            width: 100%;
+            height: 100%;
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+section article .box-card{
+    width: 100%;
+    & .cards{
+        height: 550px;
+        /* background-color: red; */
+        & img {
+            width: 100%;
+            height: 80%;
+            transition: ease-in-out 0.3s;
+        }
+        & img:hover{
+            transform: translate(7px,-7px);
+            
+        }
+        & .cards-title{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+
+            .icon-stare{
+                display: flex;
+                color: rgb(255, 136, 0);
+            }
+            & span{
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2; /* Number of lines to show */
+                overflow: hidden;
+
+                & b {
+                    font-size: 18px;
+                }
+            }
+
+        }
+    }
+}
+/*=========================================*/
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    header .navbar-collapse{
+        margin-left: 15px;
+
+        & .navbar-nav {
+            display: flex;
+            gap: 0px;
+            font-size: 19px;
+        }
+    }
+    section .slide{
+        .carousel-inner{
+            height: 200px;
+        }
+    }
+    section article .box-card{
+        & .cards{
+            height: 350px;
+            /* background-color: red; */
+           
+        }
+    }
+}
+
+
+footer {
+    background-color: #f9f9f9;
+    padding: 20px 50px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-section {
+    flex: 1 1 150px;
+    margin: 10px;
+    max-width: 250px;
+  }
+  
+  .footer-section h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p,
+  .footer-section a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    margin: 5px 0;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .qr-code {
+    max-width: 100px;
+    margin-top: 10px;
+  }
+  
+  .payment-methods img {
+    max-width: 40px;
+    margin: 5px;
+    vertical-align: middle;
+  }
+  
+  .payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Respontsive Project boostrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="https://zandokh.com/image/catalog/avethemes/zando-logo-small.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">New</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a>
+                  </li>
+
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section class="container-fluid">
+        <div id="carouselExampleControls" class="carousel slide mt-3 container" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interfal="3000">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Daki3sDruh0cbHrJAmQy3QvxvMeHNcTrcwrZtUPlaTzhDfSXUSdWpnQIUhLFr0Z_Y88&usqp=CAU" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interfal="3000">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/17/46/2e/zando-toul-tompoung.jpg?w=900&h=500&s=1" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i0.wp.com/kbcambodia.com/wp-content/uploads/2016/12/Zando-Cambodia-2.jpg?fit=720%2C540&ssl=1" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+           <form action="#" method="post">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="Name" class="form-label">Username</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="Email" class="form-label">Email</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="Phone Number" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="Address" class="form-label">Address</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="Address" class="form-label">Message</label>
+                            <textarea name="" id="text" class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+           </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <section class="container-fluid mt-5 ">
+      <article class="container">
+        <h2>Promotion Product</h2>
+        <div class="box-card ">
+          <div class="row">
+            <div class="col-xl-3 col-6">
+              <div class="cards ">
+                <div class="imgage">
+                  <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" alt="">
+                </div>
+                <div class="cards-title">
+                  <h5><b>99.99$</b></h5>
+                  <p>Regular polo Shirts</p>
+                  <div class="icon-stare">
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-6">
+              <div class="cards ">
+                <div class="imgage">
+                  <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" alt="">
+                </div>
+                <div class="cards-title">
+                  <h5><b>99.99$</b></h5>
+                  <p>Regular polo Shirts</p>
+                  <div class="icon-stare">
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-6">
+              <div class="cards ">
+                <div class="imgage">
+                  <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" alt="">
+                </div>
+                <div class="cards-title">
+                  <h5><b>99.99$</b></h5>
+                  <p>Regular polo Shirts</p>
+                  <div class="icon-stare">
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-6">
+              <div class="cards ">
+                <div class="imgage">
+                  <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" alt="">
+                </div>
+                <div class="cards-title">
+                  <h5><b>99.99$</b></h5>
+                  <p>Regular polo Shirts</p>
+                  <div class="icon-stare">
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="container-fluid mt-5 ">
+      <article class="container">
+        <h2>Promotion Product</h2>
+        <div class="box-card ">
+          <div class="row">
+            <div class="col-xl-3 col-6">
+              <div class="cards ">
+                <div class="imgage">
+                  <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" alt="">
+                </div>
+                <div class="cards-title">
+                  <h5><b>99.99$</b></h5>
+                  <p>Regular polo Shirts</p>
+                  <div class="icon-stare">
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-6">
+              <div class="cards ">
+                <div class="imgage">
+                  <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" alt="">
+                </div>
+                <div class="cards-title">
+                  <h5><b>99.99$</b></h5>
+                  <p>Regular polo Shirts</p>
+                  <div class="icon-stare">
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-6">
+              <div class="cards ">
+                <div class="imgage">
+                  <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" alt="">
+                </div>
+                <div class="cards-title">
+                  <h5><b>99.99$</b></h5>
+                  <p>Regular polo Shirts</p>
+                  <div class="icon-stare">
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-6">
+              <div class="cards ">
+                <div class="imgage">
+                  <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" alt="">
+                </div>
+                <div class="cards-title">
+                  <h5><b>99.99$</b></h5>
+                  <p>Regular polo Shirts</p>
+                  <div class="icon-stare">
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="container-fluid mt-5 ">
+      <article class="container">
+        <h2>Promotion Product</h2>
+        <div class="box-card ">
+          <div class="row">
+            <div class="col-xl-3 col-6">
+              <div class="cards ">
+                <div class="imgage">
+                  <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" alt="">
+                </div>
+                <div class="cards-title">
+                  <h5><b>99.99$</b></h5>
+                  <p>Regular polo Shirts</p>
+                  <div class="icon-stare">
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-6">
+              <div class="cards ">
+                <div class="imgage">
+                  <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" alt="">
+                </div>
+                <div class="cards-title">
+                  <h5><b>99.99$</b></h5>
+                  <p>Regular polo Shirts</p>
+                  <div class="icon-stare">
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-6">
+              <div class="cards ">
+                <div class="imgage">
+                  <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" alt="">
+                </div>
+                <div class="cards-title">
+                  <h5><b>99.99$</b></h5>
+                  <p>Regular polo Shirts</p>
+                  <div class="icon-stare">
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-6">
+              <div class="cards ">
+                <div class="imgage">
+                  <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" alt="">
+                </div>
+                <div class="cards-title">
+                  <h5><b>99.99$</b></h5>
+                  <p>Regular polo Shirts</p>
+                  <div class="icon-stare">
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                    <i class="bi bi-star-fill me-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>ZANDO APP</h4>
+          <img src="qr-code.png" alt="QR Code" class="qr-code" />
+        </div>
+        <div class="footer-section">
+          <h4>LOYALTY</h4>
+          <p><a href="#">Membership & Benefits</a></p>
+        </div>
+        <div class="footer-section">
+          <h4>FOLLOW US</h4>
+          <p><a href="#">Facebook</a></p>
+          <p><a href="#">Instagram</a></p>
+          <p><a href="#">TikTok</a></p>
+          <p><a href="#">YouTube</a></p>
+        </div>
+        <div class="footer-section">
+          <h4>CUSTOMER SERVICES</h4>
+          <p><a href="#">Online exchange policy</a></p>
+          <p><a href="#">Privacy Policy</a></p>
+          <p><a href="#">FAQs & guides</a></p>
+        </div>
+        <div class="footer-section">
+          <h4>CONTACT US</h4>
+          <p><a href="mailto:info@zandokh.com">info@zandokh.com</a></p>
+          <p><a href="tel:+85581999716">(+855) 081 999 716</a></p>
+          <p><a href="tel:+85585330330">(+855) 085 330 330</a></p>
+          <p><a href="#">Telegram</a></p>
+        </div>
+        <div class="footer-section">
+          <h4>WE ACCEPT</h4>
+          <div class="payment-methods">
+            <img src="data:image/png;base64,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" alt="ABA Pay" />
+            <img src="data:image/png;base64,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" alt="Visa" />
+            <img src="data:image/png;base64,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" alt="MasterCard" />
+            <img src="unionpay.png" alt="UnionPay" />
+            <img src="jcb.png" alt="JCB" />
+            <img src="wing.png" alt="Wing Bank" />
+            <img src="bank-transfer.png" alt="Bank Transfer" />
+            <img src="cod.png" alt="Cash on Delivery" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+</body>
+</html>
